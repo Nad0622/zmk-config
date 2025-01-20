@@ -19,7 +19,7 @@
     };
 //Agregamos tapdance para los acentos de las vocales 
  behaviors {
-        td0: tap_dance_0 {
+        td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <1>;
             tapping-term-ms = <200>;
