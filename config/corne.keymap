@@ -17,13 +17,71 @@
             then-layer = <3>;
         };
     };
-//Agregamos tapdance para los acentos de las vocales 
+//Agregamos tapdance para los acentos de las vocales
  behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp Q>, <&kp N1>;
+        };
+        td1: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <1>;
+            tapping-term-ms = <200>;
+            bindings = <&kp W>, <&kp N2>;
+        };
+        td2: tap_dance_2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&kp E>, <&kp N3>;
+        };
+         td3: tap_dance_3 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <3>;
+            tapping-term-ms = <200>;
+            bindings = <&kp R>, <&kp N4>;
+        };
+        td4: tap_dance_4 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <4>;
+            tapping-term-ms = <200>;
+            bindings = <&kp T>, <&kp N5>;
+        };
+
+        td5: tap_dance_5 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <5>;
+            tapping-term-ms = <200>;
+            bindings = <&kp Y>, <&kp N6>;
+        };
+
+        td6: tap_dance_6 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <6>;
+            tapping-term-ms = <200>;
+            bindings = <&kp U>, <&kp N7>;
+        };
+
+        td7: tap_dance_7 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <7>;
+            tapping-term-ms = <200>;
+            bindings = <&kp I>, <&kp N8>;
+        };
+
+         td8: tap_dance_8 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <8>;
+            tapping-term-ms = <200>;
+            bindings = <&kp O>, <&kp N9>;
+        };
+        td9: tap_dance_9 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <9>;
+            tapping-term-ms = <200>;
+            bindings = <&kp P>, <&kp N0>;
         };
     };
 //---------------------
@@ -37,7 +95,7 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //&kp ESC                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp ESC   &td0 &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &kp ESC   &td0 &td1 &td2 &td3 &td4   &td5 &td6  &td7     &td8   &td9    &kp BSPC
    &mt LCTRL CAPS &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &mt LSHFT TAB &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp DEL
                   &kp LGUI &mo 1 &kp SPACE   &kp SPACE &mo 2 &mt RALT RET  
