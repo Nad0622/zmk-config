@@ -98,7 +98,7 @@ behaviors {
             bindings = <&kp P>, <&kp N0>;
         };
     };
-        behaviors {//para la coma y punto  coma
+       /* behaviors {//para la coma y punto  coma
         td10: tap_dance_10 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -115,7 +115,7 @@ behaviors {
             tapping-term-ms = <200>;
             bindings = <&kp A>, <&kp GRAVE>;
         };
-    };
+    };*/
 //--------termina ajustes-------------
         keymap {
                 compatible = "zmk,keymap";
@@ -124,12 +124,12 @@ behaviors {
 // -----------------------------------------------------------------------------------------
 // | ESC |  Q   |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | DEL  |
 //                    | GUI | LWR | SPC |   | SPC | RSE  | ENT/ALT |
                         bindings = <
    &kp ESC   &td0 &td1 &td2 &td3 &td4   &td5 &td6  &td7     &td8   &td9    &kp BSPC
-   &mt LCTRL CAPS &td11 &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &mt LSHFT TAB &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &td10 &kp DOT &kp FSLH &kp DEL
+   &mt LCTRL CAPS &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &mt LSHFT TAB &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp DEL
                   &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT 
                         >;
                 };
@@ -155,7 +155,7 @@ behaviors {
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  ESC  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &kp NUBS &kp FSLH &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
+   &kp LCTRL &kp NUBS &kp NON_US_BSLH  &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
