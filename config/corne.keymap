@@ -122,8 +122,8 @@ behaviors {
 //                    | GUI | LWR | SPC |   | SPC | RSE  | ENT/ALT |
                         bindings = <
    &kp ESC   &td0 &td1 &td2 &td3 &td4   &td5 &td6  &td7     &td8   &td9    &kp BSPC
-   &mt LCTRL CAPS &td11 &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &mt LSHFT TAB &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp DEL
+   &mt LCTRL CAPS &td11 &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp LA(16)  &kp SQT
+   &mt LSHFT TAB &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp MINUS &kp DEL
                   &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT 
                         >;
                 };
