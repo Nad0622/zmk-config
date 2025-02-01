@@ -39,7 +39,7 @@ behaviors {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp E>,<&kp LA(130)>, <&kp N3>;
+            bindings = <&kp E>, <&kp N3>;
         };
        }; 
 behaviors {
@@ -71,7 +71,7 @@ behaviors {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp U>, <&kp LA(163)>, <&kp N7>;
+            bindings = <&kp U>, <&kp N7>;
         };
 };
 behaviors {
@@ -79,7 +79,7 @@ behaviors {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp I>,<&kp LA(161)>, <&kp N8>;
+            bindings = <&kp I>, <&kp N8>;
         };
 };
 behaviors {
@@ -87,7 +87,7 @@ behaviors {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp O>,<&kp LA(162)>, <&kp N9>;
+            bindings = <&kp O>, <&kp N9>;
         };
 };
 behaviors {
@@ -98,17 +98,7 @@ behaviors {
             bindings = <&kp P>, <&kp N0>;
         };
     };
-       // empiezan acentosfaltantes      
-
-        //prueba para A  y á
-        behaviors {//para la coma y punto  coma
-        td11: tap_dance_11 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp A>, <&kp LA(160)>;
-        };
-    };
+       
 
 //--------termina ajustes-------------
         keymap {
@@ -122,8 +112,8 @@ behaviors {
 //                    | GUI | LWR | SPC |   | SPC | RSE  | ENT/ALT |
                         bindings = <
    &kp ESC   &td0 &td1 &td2 &td3 &td4   &td5 &td6  &td7     &td8   &td9    &kp BSPC
-   &mt LCTRL CAPS &td11 &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp LA(16)  &kp SQT
-   &mt LSHFT TAB &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp MINUS &kp DEL
+   &mt LCTRL CAPS &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI   &kp SQT
+   &mt LSHFT TAB &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp DEL
                   &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT 
                         >;
                 };
